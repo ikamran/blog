@@ -63,7 +63,7 @@ class User(UserMixin, db.Model):
     # The "author" refers to the author property in the BlogPost class.
     posts = relationship("BlogPost", back_populates='author')
 
-db.create_all()
+#db.create_all()
 
 
 @login_manager.user_loader
